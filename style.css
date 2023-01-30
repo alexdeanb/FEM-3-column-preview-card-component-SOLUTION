@@ -1,0 +1,124 @@
+:root{
+    --Bright-Orange: hsl(31, 77%, 52%);
+    --Dark-Cyan: hsl(184, 100%, 22%);
+    --Very-Dark-Cyan: hsl(179, 100%, 13%);
+    --N-Transparent-White: hsla(0, 0%, 100%, 0.75);
+    --N-Very-Light-Gray: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    
+}
+
+body{
+    background-color: var(--N-Very-Light-Gray);
+    padding: 1em;
+    align-items: center;
+}
+
+.title{
+    color: var(--N-Very-Light-Gray);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin: 1em 0;
+}
+
+.learnMore{
+    background-color: var(--N-Very-Light-Gray);
+    padding: 1em 2.2em;
+    border-radius: 24px;
+}
+
+.vBody{
+    color: var(--N-Transparent-White);
+    line-height: 2em;
+    margin: 3em 0;
+}
+
+#sedans{
+    background-color: var(--Bright-Orange);
+}
+
+#SUVs{
+    background-color: var(--Dark-Cyan);
+}
+
+#luxury{
+    background-color: var(--Very-Dark-Cyan);
+}
+
+.vCard{
+    padding: 3.5em;
+}
+
+
+.sedan{
+    color: var(--Bright-Orange);
+}
+
+.sedan:hover{
+    background-color: var(--Bright-Orange);
+    color: var(--N-Transparent-White);
+    border: 2px solid var(--N-Transparent-White)
+}
+
+.suv{
+    color: var(--Dark-Cyan);
+}
+
+.suv:hover{
+    background-color: var(--Dark-Cyan);
+    color: var(--N-Transparent-White);
+    border: 2px solid var(--N-Transparent-White)
+}
+
+.lux{
+    color: var(--Very-Dark-Cyan);
+}
+
+.lux:hover{
+    background-color: var(--Very-Dark-Cyan);
+    color: var(--N-Transparent-White);
+    border: 2px solid var(--N-Transparent-White)
+}
+
+.vCard:first-of-type{
+    border-radius: .5em .5em 0 0;
+}
+
+.vCard:last-of-type{
+    border-radius: 0 0 .5em .5em;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 999px){
+    #Cards{
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (min-width: 1000px){
+    #Cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 1000px;
+        Height: 50%;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        margin: auto;
+    }
+    .vCard:first-of-type{
+        border-radius: .5em 0 0 .5em ;
+    }
+
+    .vCard:last-of-type{
+        border-radius: 0 .5em .5em 0 ;
+    }
+}
+
